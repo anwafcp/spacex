@@ -1,0 +1,223 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap');
+*,*::before,*::after{
+  margin:0;
+  padding: 0;
+    box-sizing: border-box;
+    
+    
+    
+}
+  body{
+    font-family: 'familjen grotesk', sans-serif;
+    background-color: #887e7e;
+   color: #ffffff;
+    
+  }
+  
+  
+  a{
+    text-decoration:none;
+    color: #fff;
+  }
+
+ul {
+    list-style:none;
+
+    
+}
+/*header/navbar*/
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index:3;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    text-transform: uppercase;
+    height: 100px;
+    padding:0 30x ;
+  
+
+   
+  
+}
+/* logo*/
+.logo{
+  width: 210px;
+  height: auto;
+
+
+}
+.logo img{
+  display: block;
+  width: 100%;
+  height: auto;
+ 
+
+}
+/*desktop menu*/
+.desktop-main-menu {
+  margin-right: 50px;
+   
+}
+.desktop-main-menu ul{
+  display: flex;
+}
+.desktop-main-menu ul li{
+ position: relative;
+ margin-right: 20px;
+ padding-bottom: 2px;
+}
+/* menu item bottom border*/
+.desktop-main-menu ul li a::after{
+  content: ' ';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 1px;
+background-color: #fff;
+transform: scaleX(0);
+transition: transform 0.6s cubic-bezier(0.16,1,0.22,1);
+transform-origin: right center;
+}
+.desktop-main-menu ul li  a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+  transition-duration: 0.4s;
+}
+/*sections*/
+section{
+  position: relative;
+  height:100vh ;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+}
+.section-inner{
+  position: absolute;
+  bottom: 200px;
+  left: 150px;
+  max-width: 560px;
+}
+.section-inner h4{
+  font-size: 22px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  animation: fadeInUp 0.5s ease-in-out;
+
+}
+.section-inner h2{
+  font-size: 50px;
+  font-weight: 700;
+  animation: fadeInUp 0.5s ease-in-out 0.2s;
+   margin-bottom: 20px;
+   animation-fill-mode: both ; 
+
+}
+.section-inner a{
+  animation: fadeInUp 0.5s ease-in-out 0.4s;
+  animation-fill-mode: both 
+}
+/* background image*/
+.section-a{
+  background-image: url('../spacex/Star6_24_102123_DSC_0374_013728528d.jpg');
+}
+.btn{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align:center ;
+  min-width: 130px;
+  padding:15px  50px ;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: hidden;
+  z-index: 2;
+ 
+
+}
+.btn:hover span {
+  color: #000000;
+}
+.btn .hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #000;
+  z-index: -1;
+  transform: translateY(100%);
+  transition: transform 0.8s cubic-bezier(0.19,1,0.22,1);
+}
+.btn:hover .hover{
+  transform: translateY(0);
+ 
+}
+.Scroll-arrow{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width:30px;
+   height:20px;
+                    
+ stroke-width: 2px;
+                   
+}
+/* animations*/
+@keyframes  fadeInUp{
+  0% {
+       opacity: 0;
+       transform: translateY(140px);
+  
+
+  }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+
+
+  }
+}
+
+.section-b{
+  background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Starlink_G7_5_South_West_Hill_Horiz_7579_Desktop_6a036d302a.jpg');
+}
+.section-c{
+  background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Psyche_outside39abmound_IMG_8486_desktop_f5072ad69b.jpg');
+}
+.section-d{
+  background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Crew_6_Desktop_9857f5c2f0.jpg');
+}
+.section-e{
+  background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg');
+}
+/**footer**/
+.foot{
+  height: 80.4px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h5{
+  margin-right: 10px;
+  font-weight: 300;
+}
+h3{
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: small;
+}
+
+ 
+
